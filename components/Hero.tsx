@@ -70,7 +70,7 @@ export default function Hero() {
               <TarotCard
                 title="La Intuición"
                 description="Escuchar lo que tu interior ya sabe"
-                backImage="/CartaElSol.jpg"
+                backImage="/cartaElSol.jpg"
               />
               <TarotCard
                 title="El Proceso"
