@@ -9,7 +9,7 @@
   --brand-soft: #ffbedc;
   --card-bg: #ffffffcc;
   --border-soft: rgba(43, 16, 32, 0.12);
-  --font-sans: var(--font-afacad);
+  --font-sans: "Afacad Flux", "Afacad", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 @theme inline {

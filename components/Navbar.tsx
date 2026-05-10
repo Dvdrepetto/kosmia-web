@@ -10,17 +10,17 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#fde8e5]/80 backdrop-blur-md border-b border-[#ec1a82]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex h-16 items-center" aria-label="Kosmia inicio">
+            <Link href="/" className="flex h-24 items-center" aria-label="Kosmia inicio">
               <Image
-                src="/kosmia_logo_letras_transparente.png"
+                src="/LogoAgus.png"
                 alt="Kosmia"
-                width={176}
-                height={60}
+                width={300}
+                height={300}
                 priority
-                className="h-10 w-auto object-contain sm:h-11"
+                className="h-20 w-auto object-contain sm:h-[5.5rem]"
               />
             </Link>
           </div>
