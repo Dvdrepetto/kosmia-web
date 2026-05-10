@@ -22,13 +22,25 @@ export default function TarotCard({ title, description, backImage }: TarotCardPr
       >
         {/* Frente de la carta */}
         <div className="absolute inset-0 w-full h-full backface-hidden rounded-2xl overflow-hidden border border-[#ec1a82]/20 shadow-[0_20px_50px_rgba(43,16,32,0.12)]">
-          <Image src="/Fondo2.png" alt="Carta Fondo" fill className="object-cover scale-130" />
+          <Image
+            src="/Fondo2.png"
+            alt="Carta Fondo"
+            fill
+            sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 192px"
+            className="object-cover scale-130"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2b1020]/30 via-transparent to-transparent" />
         </div>
 
         {/* Reverso de la carta */}
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-2xl overflow-hidden border border-[#ec1a82]/20 shadow-[0_20px_50px_rgba(43,16,32,0.12)]">
-          <Image src={backImage} alt={title} fill className="object-cover" />
+          <Image
+            src={backImage}
+            alt={title}
+            fill
+            sizes="(min-width: 1024px) 256px, (min-width: 640px) 224px, 192px"
+            className="object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-[#2b1020]/70 via-transparent to-transparent" />
           <div className="absolute bottom-5 left-5 right-5 rounded-3xl bg-[#ec1a82]/90 p-4 text-center shadow-lg shadow-[#2b1020]/15">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-white">{description}</p>

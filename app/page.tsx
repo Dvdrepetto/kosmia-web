@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -11,30 +12,43 @@ export default function Home() {
         <section id="contactame" className="rounded-[2rem] border border-[rgba(43,16,32,0.08)] bg-white/90 p-8 shadow-[0_24px_70px_rgba(252,102,31,0.08)] sm:p-10">
           <div className="grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
             <div className="space-y-6">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#ec1a82]">Contáctame</p>
               <h2 className="text-3xl font-bold tracking-[-0.03em] sm:text-4xl">
-                Un espacio cálido, profesional y con mensaje propio.
+                Contactame
               </h2>
               <p className="max-w-2xl text-lg leading-8 text-[#4a2a38]">
-                Escribe para reservar tu lectura o preguntar sobre sesiones, tiempos y energía disponible.
+                Si sentís que es momento de mirar hacia adentro, podés escribirme para reservar una lectura o hacerme cualquier consulta.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://wa.me/34640207934?text=Hola%20Agustina%2C%20quiero%20consultar%20por%20una%20lectura%20de%20tarot%20evolutivo."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-[#ec1a82] to-[#fc661f] text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                >
+                  Reservar Lectura
+                </a>
+                <a
+                  href="https://www.instagram.com/kosmia.tarot/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-[#ffbedc] text-[#2b1020] font-semibold rounded-full border border-[#ec1a82]/25 hover:bg-[#ffd7e3] transition-all duration-300 hover:-translate-y-1"
+                >
+                  @kosmia.tarot
+                </a>
+              </div>
             </div>
             <div className="space-y-4 rounded-[2rem] bg-[#ffbedc] p-8 text-[#2b1020] shadow-[0_18px_40px_rgba(236,26,130,0.14)]">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#ec1a82]">Estoy aquí</p>
-              <p className="text-lg font-semibold">hola@kosmia.com</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#ec1a82]">Conectemos</p>
+              <p className="text-lg font-semibold">WhatsApp</p>
               <p className="text-sm leading-7 text-[#4a2a38]">
-                Envíame un mensaje y te responderé con detalles para tu primera sesión.
+                Mi canal principal para reservas, disponibilidad y consultas.
               </p>
-              <a
-                href="mailto:hola@kosmia.com"
-                className="inline-flex w-full items-center justify-center rounded-full bg-gradient-to-r from-[#ec1a82] via-[#ff8a79] to-[#fc661f] px-6 py-3 text-sm font-bold text-white transition hover:opacity-95"
-              >
-                Escribir a Agus
-              </a>
             </div>
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

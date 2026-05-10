@@ -13,8 +13,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/">
-              <Image src="/KL.png" alt="Kosmia" width={120} height={120} className="h-24 w-auto" />
+            <Link href="/" className="flex h-16 items-center" aria-label="Kosmia inicio">
+              <Image
+                src="/kosmia_logo_letras_transparente.png"
+                alt="Kosmia"
+                width={176}
+                height={60}
+                priority
+                className="h-10 w-auto object-contain sm:h-11"
+              />
             </Link>
           </div>
 

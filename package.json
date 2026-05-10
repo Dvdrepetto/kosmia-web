@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "env -u MallocStackLogging -u MallocStackLoggingNoCompact -u MallocScribble -u MallocPreScribble -u MallocNanoZone next dev --webpack --hostname 127.0.0.1 --disable-source-maps",
+    "build": "env -u MallocStackLogging -u MallocStackLoggingNoCompact -u MallocScribble -u MallocPreScribble -u MallocNanoZone next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },

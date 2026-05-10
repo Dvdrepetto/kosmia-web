@@ -10,9 +10,9 @@ const afacadFlux = Afacad_Flux({
 });
 
 export const metadata: Metadata = {
-  title: "Kosmia | Tarot evolutivo con Agus",
+  title: "Kosmia | Tarot evolutivo con Agustina Eder",
   description:
-    "Landing page moderna y luminosa para Agus, tarot evolutivo con energía cósmica y femenina.",
+    "Lecturas de tarot evolutivo con Agustina Eder para mirar hacia adentro, ordenar procesos y conectar con tu intuición.",
 };
 
 export default function RootLayout({
